@@ -5,18 +5,326 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Göktuğ KÜRKÇÜ</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        a{
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .interests{
+            margin: 25px 50px;
+        }
+
+        .interests ul{
+            list-style: none;
+        }
+
+        .interests ul >li{
+            display: inline-block;
+        }
+
+        .movie{
+            margin: 25px 25px;
+            border: 1px solid #000000;
+            border-radius: 25px;
+            padding: 50px 50px;
+        }
+
+        .movie:hover{
+            box-shadow: 0 0 1px 1px;
+        }
+
+    </style>
 </head>
 <body>
-    <!-- h1: en büyük başlık etiketi -->
-    <h1>Göktuğ KÜRKÇÜ</h1>
-
-    <!-- h2: ikincil başlık; hakkımda bölümü -->
-    <h2>Hakkımda</h2>
-    <!-- h2 için açıklama amaçlı paragraf -->
-    <p>Merhaba, ben Göktuğ. Harita mühendisiyim ve coğrafi bilgi sistemleri ile uğraşıyorum. <br>
-        Mesleğimde kendimi geliştirebilmek ve hoşuma gittiği için yazılımda(özellikle frontend ve python'da) <br> kendimi geliştirmek istiyorum. Patika.dev'e katıldığım için mutluyum.</p>
-
+    <header>
+        <!-- Hakkımda -->
+        <div class="about-me" style="margin: 25px 25px;">
+            <!-- Ad/Soyad -->
+            <h1>Göktuğ KÜRKÇÜ</h1>
+            <!-- Hakkımda Yazısı -->
+            <div class="hakkimda">
+                <h3>Hakkımda</h3>
+                <p>Merhaba, ben Göktuğ. Harita mühendisiyim ve coğrafi bilgi sistemleri ile uğraşıyorum. Mesleğimde kendimi geliştirebilmek ve hoşuma gittiği için yazılımda(özellikle frontend ve python'da) kendimi geliştirmek istiyorum. Patika.dev'e katıldığım için mutluyum.</p>
+            </div>
+        </div>
+        
+    </header>
     
+    <section>
+        <div class="interests">
+            <h3>İlgi Alanlarım</h3>
+            <hr style="width: 250px;"><br><br>
+            <ol>
+                <li>
+                    <a href="https://www.imdb.com/search/title/?groups=top_100&sort=user_rating,desc">Filmler</a>
+                    <center>
+                        <ul>
+                            <li>
+                                <div class="movie">
+                                    <h4><a href="https://www.imdb.com/title/tt0111161/?ref_=adv_li_tt">Esaretin Bedeli (1994)</a></h4>
+                                    <a href="https://www.imdb.com/title/tt0111161/?ref_=adv_li_tt">
+                                        <table>
+                                            <caption>Esaretin Bedeli</caption>
+                                            <tr>
+                                                <td>
+                                                    <img src="https://picsum.photos/id/227/200/300" alt="Esaretin Bedeli">,
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="movie">
+                                    <h4><a href="https://www.imdb.com/title/tt0068646/?ref_=adv_li_tt">Baba (1972)</a></h4>
+                                    <a href="https://www.imdb.com/title/tt0068646/?ref_=adv_li_tt">
+                                        <table>
+                                            <caption>The Godfather</caption>
+                                            <tr>
+                                                <td>
+                                                    <img src="https://picsum.photos/id/257/200/300" alt="The Godfather">,
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="movie">
+                                    <h4><a href="https://www.imdb.com/title/tt0468569/?ref_=adv_li_tt">Kara Şövalye (2008)</a></h4>
+                                    <a href="https://www.imdb.com/title/tt0468569/?ref_=adv_li_tt">
+                                        <table>
+                                            <caption>Kara Şövalye</caption>
+                                            <tr>
+                                                <td>
+                                                    <img src="https://picsum.photos/id/287/200/300" alt="Kara Şövalye">,
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                </div>
+                            </li>
+                            <br>
+                            <li>
+                                <div class="movie">
+                                    <h4><a href="#">Maymunlar Cehennemi (1971)</a></h4>
+                                    <a href="https://www.imdb.com/title/tt0111161/?ref_=adv_li_tt">
+                                        <table>
+                                            <caption>Esaretin Bedeli</caption>
+                                            <tr>
+                                                <td>
+                                                    <img src="https://picsum.photos/id/227/200/300" alt="Esaretin Bedeli">,
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="movie">
+                                    <h4><a href="#">Kutsal Damacana (?)</a></h4>
+                                    <a href="https://www.imdb.com/title/tt0068646/?ref_=adv_li_tt">
+                                        <table>
+                                            <caption>Kutsal Damacana</caption>
+                                            <tr>
+                                                <td>
+                                                    <img src="https://picsum.photos/id/257/200/300" alt="The Godfather">,
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="movie">
+                                    <h4><a href="#">Hababam Sınıfı (1975)</a></h4>
+                                    <a href="https://www.imdb.com/title/tt0468569/?ref_=adv_li_tt">
+                                        <table>
+                                            <caption>Hababam Sınıfı</caption>
+                                            <tr>
+                                                <td>
+                                                    <img src="https://picsum.photos/id/487/200/300" alt="Kara Şövalye">,
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                <hr style="width: 90%; margin-bottom: 50px;">
+                    </center>
+                </li>
+                <li>
+                    <a href="#">Diziler</a>
+                    <center>
+                        <ul>
+                            <li>
+                                <div class="movie">
+                                    <h4><a href="https://www.imdb.com/title/tt1475582/?ref_=ttls_li_tt">Sherlock (2010–2017)</a></h4>
+                                    <a href="https://www.imdb.com/title/tt1475582/?ref_=ttls_li_tt">
+                                        <table>
+                                            <caption>Sherlock (2010–2017)</caption>
+                                            <tr>
+                                                <td>
+                                                    <img src="https://picsum.photos/id/457/200/300" alt="Sherlock (2010–2017)">,
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="movie">
+                                    <h4><a href="https://www.imdb.com/title/tt7366338/?ref_=ttls_li_tt">Çernobil (2019)</a></h4>
+                                    <a href="https://www.imdb.com/title/tt7366338/?ref_=ttls_li_tt">
+                                        <table>
+                                            <caption>Çernobil (2019)</caption>
+                                            <tr>
+                                                <td>
+                                                    <img src="https://picsum.photos/id/657/200/300" alt="Çernobil (201">,
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="movie">
+                                    <h4><a href="https://www.imdb.com/title/tt5753856/?ref_=ttls_li_tt">Dark (2017–2020)</a></h4>
+                                    <a href="https://www.imdb.com/title/tt5753856/?ref_=ttls_li_ttitle/tt0468569/?ref_=adv_li_tt">
+                                        <table>
+                                            <caption>Dark (2017–2020)</caption>
+                                            <tr>
+                                                <td>
+                                                    <img src="https://picsum.photos/id/287/200/300" alt="Dark (2017–2020)">,
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                </div>
+                            </li>
+                            <br>
+                            <li>
+                                <div class="movie">
+                                    <h4><a href="#">Taht Oyunları (2011–2019)</a></h4>
+                                    <a href="https://www.imdb.com/title/tt0111161/?ref_=adv_li_tt">
+                                        <table>
+                                            <caption>Taht Oyunları (2011–2019)</caption>
+                                            <tr>
+                                                <td>
+                                                    <img src="https://picsum.photos/id/227/200/300" alt="Esaretin Bedeli">,
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="movie">
+                                    <h4><a href="#">Fringe (2008–2013)</a></h4>
+                                    <a href="https://www.imdb.com/title/tt0068646/?ref_=adv_li_tt">
+                                        <table>
+                                            <caption>Fringe (2008–2013)</caption>
+                                            <tr>
+                                                <td>
+                                                    <img src="https://picsum.photos/id/257/200/300" alt="The Godfather">,
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="movie">
+                                    <h4><a href="#">Bron/Broen (2011–2018)</a></h4>
+                                    <a href="https://www.imdb.com/title/tt0468569/?ref_=adv_li_tt">
+                                        <table>
+                                            <caption>Bron/Broen (2011–2018)</caption>
+                                            <tr>
+                                                <td>
+                                                    <img src="https://picsum.photos/id/487/200/300" alt="Kara Şövalye">,
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                <hr style="width: 90%;">
 
+                    </center>
+                </li>
+                <li>
+                    <a href="#">Kitaplar</a>
+                    <center>
+                        <ul>
+                            <li>
+                                <div class="movie">
+                                    <h4><a href="https://www.goodreads.com/book/show/56769534-super-volcanoes">Super Volcanoes: What They Reveal about Earth and the Worlds Beyond</a></h4>
+                                    <a href="https://www.goodreads.com/book/show/56769534-super-volcanoes">
+                                        <table>
+                                            <caption>Super Volcanoes: What They Reveal about Earth and the Worlds Beyond</caption>
+                                            <tr>
+                                                <td>
+                                                    <img src="https://picsum.photos/id/457/200/300" alt="Sherlock (2010–2017)">,
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="movie">
+                                    <h4><a href="https://www.goodreads.com/book/show/57355940-lost-cities-ancient-tombs">Lost Cities, Ancient Tombs: 100 Discoveries That Changed the World</a></h4>
+                                    <a href="https://www.goodreads.com/book/show/57355940-lost-cities-ancient-tombs">
+                                        <table>
+                                            <caption>Lost Cities, Ancient Tombs: 100 Discoveries That Changed the World</caption>
+                                            <tr>
+                                                <td>
+                                                    <img src="https://picsum.photos/id/287/200/300" alt="Dark (2017–2020)">,
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                </div>
+                            </li>
+                            <br>
+                            <li>
+                                <div class="movie">
+                                    <h4><a href="#">Patient Zero: A Brief History of the Science Stories Behind the World's Worst Diseases</a></h4>
+                                    <a href="#">
+                                        <table>
+                                            <caption>Patient Zero: A Brief History of the Science Stories Behind the World's Worst Diseases</caption>
+                                            <tr>
+                                                <td>
+                                                    <img src="https://picsum.photos/id/227/200/300" alt="Esaretin Bedeli">,
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                <hr style="width: 90%;">
+
+                    </center>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+
+    <footer style="margin-bottom: 50px;">
+        <center>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, porro?</p>
+        </center>
+    </footer>
 </body>
 </html>
